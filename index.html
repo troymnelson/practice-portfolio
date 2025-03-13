@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <div class="container">
+
+      <nav class="navbar">
+        <ul class="links">
+          <li class='link'><a target="_blank" href='#about'>About</a></li>
+          <li class='link'><a target="_blank" href='#projects'>Projects</a></li>
+          <li class='link'><a target="_blank" href='#contact'>Contact</a></li>
+        </ul>
+      </nav>
+        <section class='main-content' id="about">
+          <h1>Troy Nelson</h1>
+          <p>Full Stack Web Developer</p>
+        </section>
+        <section class="sidebar">
+          <h2>Skills:</h2>
+          <ul class="skills">
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">JavaScript</li>
+          </ul>
+        </section>
+        <section id="projects">
+          <article class="project project-1"><img src='./assets/orbit.png' alt='orbit project'></article>
+          <article><img src='./assets/email-masking.png' alt='email masking application'></article>
+          <article></article>
+        </section>
+      <footer>
+        <form>
+          <h2 id="#contact">Contact Me</h2>
+          <label for="name">Your name:</label>
+          <input type='text' id='name' name='name' required>
+          <label for="email">Your email:</label>
+          <input type="email" id="email" name="email" required>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

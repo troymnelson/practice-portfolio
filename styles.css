@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-blue: #205781;
+  --med-blue: #4F959D;
+  --light-blue: #98D2C0;
+  --beach-sand: #F6F8D5;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--med-blue);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "nav nav nav"
+  "side main main" 
+  "side projects projects" 
+  "footer footer footer";
+  grid-gap: 10px;
+}
+
+.navbar {
+  grid-area: nav;
+  width: 100vw;
+}
+
+.links {
+
+  display: flex;
+  list-style: none;
+  padding: 25px;
+  background-color: var(--dark-blue);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--beach-sand);
+  font-size: 24px;
+
+}
+
+.link a:hover {
+  color: var(--light-blue);
+}
+#about {
+  grid-area: main;
+  background-color: var(--light-blue);
+  color: var(--beach-sand);
+  padding: 15px;
+  
+}
+
+h1 {
+  font-size: 56px;
+  margin: 15px;
+}
+
+#about p {
+  font-size: 24px;
+  margin: 15px;
+  text-align: right;
+}
+
+.sidebar {
+  background-color: var(--light-blue);
+  grid-area: side;
+  color: var(--beach-sand);
+  padding: 10px;
+  
+}
+
+.sidebar h2 {
+  font-size: 36px;
+}
+#projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--dark-blue);
+}
+
+form {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 33%;
+  border: 2px solid var(--med-blue);
+}
+
+form h2, label {
+  color: var(--beach-sand);
+  text-align: center;
+}
+
+form h2 {
+  font-size: 48px;
+}
+
+input:active {
+  border: 2px solid var(--med-blue);
+}
+
+img {
+  height: 400px;
+  margin: 10px;
+}
